@@ -1,0 +1,8 @@
+1. download the software.
+2. paste the main file to documnt/netbeanse.
+3. connect Database
+	install MySQL administrator
+	go to Restore
+	upload database
+4. paste the jxl and mysql-connector-java-5.1.5-bin file to "C:\Program Files\Java\jdk1.8.0_20\jre\lib\ext"
+5. run the project.

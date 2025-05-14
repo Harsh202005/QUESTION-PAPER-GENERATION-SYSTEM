@@ -1,0 +1,266 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.0.22-community-nt
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema automaticquestionpapergenerator
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ automaticquestionpapergenerator;
+USE automaticquestionpapergenerator;
+
+--
+-- Table structure for table `automaticquestionpapergenerator`.`questions`
+--
+
+DROP TABLE IF EXISTS `questions`;
+CREATE TABLE `questions` (
+  `sr_no` varchar(45) NOT NULL default '',
+  `department` varchar(45) NOT NULL default '',
+  `semester` varchar(45) NOT NULL default '',
+  `subject` varchar(45) NOT NULL default '',
+  `unit` varchar(45) NOT NULL default '',
+  `question` varchar(1000) NOT NULL default '',
+  `level_of_que` varchar(45) NOT NULL default '',
+  `marks` varchar(45) NOT NULL default '',
+  `teacher_name` varchar(45) NOT NULL default '',
+  PRIMARY KEY  (`sr_no`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `automaticquestionpapergenerator`.`questions`
+--
+
+/*!40000 ALTER TABLE `questions` DISABLE KEYS */;
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('1','computer technology','fifth','css','unit-i','explain any  four features of javascript?','easy','1','mrs. s.s.kadam'),
+ ('10','computer technology','fifth','css','unit-i','write a javascript conditional statement to sort three numbers. display an alert box to show the result.','medium','4','mrs. s.s.kadam'),
+ ('100','computer technology','fifth','css','unit-vi','what is the use of scrollable menu?','medium','5','mrs. s.s.kadam'),
+ ('101','computer technology','fifth','css','unit-vi','create a slideshow with the group of four images, also simulate the next and previous transition between slides in your javascript.','difficult','5','mrs. s.s.kadam'),
+ ('102','computer technology','fifth','css','unit-vi','list ways of protecting your webpage and describe any one of them.','medium','2','mrs. s.s.kadam'),
+ ('103','computer technology','fifth','css','unit-vi','write a javascript that disables the right click button and displays the message right click button is disable.','difficult','2','mrs. s.s.kadam'),
+ ('104','computer technology','fifth','css','unit-vi','write short note on - frameworks of javascript and its applications.','difficult','4','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('105','computer technology','fifth','operating system','unit-i','differentiate between batch operating system and time shared operating system. (any two points)','easy','1','mrs. s.s.kadam'),
+ ('106','computer technology','fifth','operating system','unit-i','state any four services of operating system.','easy','2','mrs. s.s.kadam'),
+ ('107','computer technology','fifth','operating system','unit-i','define : process , program','medium','1','mrs. s.s.kadam'),
+ ('108','computer technology','fifth','operating system','unit-i','state two features of preemptive scheduling.','difficult','2','mrs. s.s.kadam'),
+ ('109','computer technology','fifth','operating system','unit-i','write syntax of ps command and explain its use with the help of suitable example','easy','1','mrs. s.s.kadam'),
+ ('11','computer technology','fifth','css','unit-i','write a javascript for loop that will iterate from 0 to 15. for each iteration, it will check if the current number is odd or even, and display a message to the screen.','difficult','5','mrs. s.s.kadam'),
+ ('110','computer technology','fifth','operating system','unit-i','list any four file attributes.','easy','1','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('111','computer technology','fifth','operating system','unit-i','defione following terms i) page fault ii) segmentation','difficult','2','mrs. s.s.kadam'),
+ ('112','computer technology','fifth','operating system','unit-i','explain dual modes of operations of an operating system.','medium','2','mrs. s.s.kadam'),
+ ('113','computer technology','fifth','operating system','unit-i','describe essential activities done by an operating system for protection and sharing.','easy','4','mrs. s.s.kadam'),
+ ('114','computer technology','fifth','operating system','unit-i','state what is interprocess communication and explain its advantages..','medium','5','mrs. s.s.kadam'),
+ ('115','computer technology','fifth','operating system','unit-i','discribe different scheduling criteria.','easy','4','mrs. s.s.kadam'),
+ ('116','computer technology','fifth','operating system','unit-i','define pcb. list information contained in pcb and explain any two .','medium','1','mrs. s.s.kadam'),
+ ('117','computer technology','fifth','operating system','unit-i','define deadlock and state the necessary conditions for deadlock..','easy','5','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('118','computer technology','fifth','operating system','unit-ii','explain following terms with respect to memory management :i.compaction ii.swapping.','difficult','2','mrs. s.s.kadam'),
+ ('119','computer technology','fifth','operating system','unit-ii','compare between windows and linux operating system.(any four points)','medium','4','mrs. s.s.kadam'),
+ ('12','computer technology','fifth','css','unit-i','write a javascript conditional statement to find the largest of five numbers.','medium','4','mrs. s.s.kadam'),
+ ('120','computer technology','fifth','operating system','unit-ii','write any four system calls related to device management.','medium','2','mrs. s.s.kadam'),
+ ('121','computer technology','fifth','operating system','unit-ii','enlist different file allocation methods and explain any two.','difficult','4','mrs. s.s.kadam'),
+ ('122','computer technology','fifth','operating system','unit-ii','compare between short term and long term scheduler.(any four points)','difficult','5','mrs. s.s.kadam'),
+ ('123','computer technology','fifth','operating system','unit-ii','write two uses of following operating system tools :i. performance monitor','medium','5','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('124','computer technology','fifth','operating system','unit-ii','write the output of the following commands. a. kill 9042018','medium','1','mrs. s.s.kadam'),
+ ('125','computer technology','fifth','operating system','unit-ii','given a page reference reference string(arrival) with four page frames, calculate the page faults with fifo and lru page replacement algorithms respectively : 12, 3, 4, 5, 1, 2, 5, 1, 2, 3, 4, 5, 1,6,7,8,7,8,9,7,8,9,5,4,4,5,4,2.','difficult','5','mrs. s.s.kadam'),
+ ('126','computer technology','fifth','operating system','unit-ii','compare between bitmap and linked list free space management techniques.(any six points)','medium','2','mrs. s.s.kadam'),
+ ('127','computer technology','fifth','operating system','unit-ii','construct and explain directory structure of a file system in terms of single level, two level and tree structure.','medium','5','mrs. s.s.kadam'),
+ ('128','computer technology','fifth','operating system','unit-ii','differentiate between multiprogramming and multiprocessing. (any 2 points)','medium','4','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('129','computer technology','fifth','operating system','unit-ii','draw layered structure of operating system.','medium','1','mrs. s.s.kadam'),
+ ('13','computer technology','fifth','css','unit-i','write a javascript program to check from two given integers, if one is positive and one is negative.','difficult','5','mrs. s.s.kadam'),
+ ('130','computer technology','fifth','operating system','unit-iii','list any four types of os.','difficult','4','mrs. s.s.kadam'),
+ ('131','computer technology','fifth','operating system','unit-iii','state any two activities performed by file management component of an operating systems','medium','2','mrs. s.s.kadam'),
+ ('132','computer technology','fifth','operating system','unit-iii','list any four operating system services.','difficult','4','mrs. s.s.kadam'),
+ ('133','computer technology','fifth','operating system','unit-iii','draw process state trainsition diagram .','medium','5','mrs. s.s.kadam'),
+ ('134','computer technology','fifth','operating system','unit-iii','compare fcfs and sjf scheduling algorithm with any four points.','medium','4','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('135','computer technology','fifth','operating system','unit-iii','describe contiguous memory allocation done by operating system with he help of suitable example.','difficult','2','mrs. s.s.kadam'),
+ ('136','computer technology','fifth','operating system','unit-iii','explain real time system. list its any four application.','medium','5','mrs. s.s.kadam'),
+ ('137','computer technology','fifth','operating system','unit-iii','what is the purpose of the system calls? state any two calls with its functions.','medium','1','mrs. s.s.kadam'),
+ ('138','computer technology','fifth','operating system','unit-iii','describe process control block with the help of suitable diagram','medium','4','mrs. s.s.kadam'),
+ ('139','computer technology','fifth','operating system','unit-iii','describe cpu burst cycle and i/o burst cycle.','medium','2','mrs. s.s.kadam'),
+ ('14','computer technology','fifth','css','unit-i','write a javascript program check if a given positive number is a multiple of 3 or a multiple of 7.','difficult','4','mrs. s.s.kadam'),
+ ('140','computer technology','fifth','operating system','unit-iii','what is deadlock? give characteristics of deadlock.','difficult','5','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('141','computer technology','fifth','operating system','unit-iii','describe multilevel queue scheduling with labelled diagram.','medium','1','mrs. s.s.kadam'),
+ ('142','computer technology','fifth','operating system','unit-iii','define the term swapping.','easy','4','mrs. s.s.kadam'),
+ ('143','computer technology','fifth','operating system','unit-vi','explain different process scheduling criteria.','easy','5','mrs. s.s.kadam'),
+ ('144','computer technology','fifth','operating system','unit-vi','list the directory structures.','medium','4','mrs. s.s.kadam'),
+ ('145','computer technology','fifth','operating system','unit-vi','with suitable example describe how to use bit map method for free space management.','difficult','1','mrs. s.s.kadam'),
+ ('146','computer technology','fifth','operating system','unit-vi','state the syntax and use of following process related commands :i. bg ii kill','easy','5','mrs. s.s.kadam'),
+ ('147','computer technology','fifth','operating system','unit-vi','draw process state trainsition diagram','easy','2','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('148','computer technology','fifth','operating system','unit-vi','explain real time system. list its any four application.','difficult','5','mrs. s.s.kadam'),
+ ('149','computer technology','fifth','operating system','unit-vi','what is the purpose of the system calls? state any two calls with its functions.','medium','1','mrs. s.s.kadam'),
+ ('15','computer technology','fifth','css','unit-i','write a javascript program to reverse a given string.','medium','2','mrs. s.s.kadam'),
+ ('150','computer technology','fifth','operating system','unit-vi','define real time operating system. list its any four applications of it','easy','4','mrs. s.s.kadam'),
+ ('151','computer technology','fifth','operating system','unit-vi','explain any 4 services provided by os','medium','1','mrs. s.s.kadam'),
+ ('152','computer technology','fifth','operating system','unit-vi','draw process state diagram.','easy','4','mrs. s.s.kadam'),
+ ('153','computer technology','fifth','operating system','unit-vi','explain any four scheduling criteria.','medium','1','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('154','computer technology','fifth','operating system','unit-v','define virtual memory','easy','5','mrs. s.s.kadam'),
+ ('155','computer technology','fifth','operating system','unit-v','describe any four file attributes','difficult','2','mrs. s.s.kadam'),
+ ('156','computer technology','fifth','operating system','unit-v','enlist types of operating system. explain multiprogramming os in detail','medium','5','mrs. s.s.kadam'),
+ ('157','computer technology','fifth','operating system','unit-v','list components of os. explain process management in detail','easy','5','mrs. s.s.kadam'),
+ ('158','computer technology','fifth','operating system','unit-v','with neat diagram explain inter process communication model','medium','4','mrs. s.s.kadam'),
+ ('159','computer technology','fifth','operating system','unit-v','describe i/o burst and cpu burst cycle with neat diagram','easy','2','mrs. s.s.kadam'),
+ ('16','computer technology','fifth','css','unit-i','write a javascript program to check number is armstrong or not.','medium','1','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('160','computer technology','fifth','operating system','unit-v','explain ‘ps’ command with any four options.','medium','4','mrs. s.s.kadam'),
+ ('161','computer technology','fifth','operating system','unit-v','explain deadlock? what are necessary conditions for deadlock','difficult','5','mrs. s.s.kadam'),
+ ('162','computer technology','fifth','operating system','unit-v','explain partitioning and its types.','medium','4','mrs. s.s.kadam'),
+ ('17','computer technology','fifth','css','unit-i','write a javascript to display squares of 1 to 10 numbers using for loop.','medium','2','mrs. s.s.kadam'),
+ ('18','computer technology','fifth','css','unit-i','write a javascript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.','difficult','5','mrs. s.s.kadam'),
+ ('19','computer technology','fifth','css','unit-ii','define array.','easy','1','mrs. s.s.kadam'),
+ ('2','computer technology','fifth','css','unit-i','write a javascript to display welcome message in javascript.','easy','2','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('20','computer technology','fifth','css','unit-ii','how to declare array in javascript.','easy','1','mrs. s.s.kadam'),
+ ('21','computer technology','fifth','css','unit-ii','write a javascript for sorting the array elements.','easy','2','mrs. s.s.kadam'),
+ ('22','computer technology','fifth','css','unit-ii','explain the use of join () function with examples.','easy','4','mrs. s.s.kadam'),
+ ('23','computer technology','fifth','css','unit-ii','explain the use of push and pop functions.','easy','4','mrs. s.s.kadam'),
+ ('24','computer technology','fifth','css','unit-ii','write a short note on – associative array in javascript.','easy','1','mrs. s.s.kadam'),
+ ('25','computer technology','fifth','css','unit-ii','write syntax for defining the function.','medium','5','mrs. s.s.kadam'),
+ ('26','computer technology','fifth','css','unit-ii','explain the method of calling a function from html.','medium','4','mrs. s.s.kadam'),
+ ('27','computer technology','fifth','css','unit-ii','what is string? enlist some commonly used methods for manipulating string.','difficult','5','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('28','computer technology','fifth','css','unit-ii','write a javascript to convert string to number.','medium','1','mrs. s.s.kadam'),
+ ('29','computer technology','fifth','css','unit-ii','differentiate between concat() and join() methods of array object.','medium','4','mrs. s.s.kadam'),
+ ('3','computer technology','fifth','css','unit-i','explain the term – object name, property, method, dot syntax, main event.','medium','4','mrs. s.s.kadam'),
+ ('30','computer technology','fifth','css','unit-ii','write a javascript function to count the number of vowels in a given  string.','medium','2','mrs. s.s.kadam'),
+ ('31','computer technology','fifth','css','unit-ii','write a javascript that find and displays number of duplicate values in  an array.','medium','2','mrs. s.s.kadam'),
+ ('32','computer technology','fifth','css','unit-ii','write a function that prompts the user for a color and uses what they select to set the background color of the new webpage opened','difficult','4','mrs. s.s.kadam'),
+ ('33','computer technology','fifth','css','unit-ii','explain the scope of variable with the help of programming example','medium','4','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('34','computer technology','fifth','css','unit-ii','how to retrieve a position of desired word from the string','difficult','1','mrs. s.s.kadam'),
+ ('35','computer technology','fifth','css','unit-iii','what is form.','easy','1','mrs. s.s.kadam'),
+ ('36','computer technology','fifth','css','unit-iii','explain two uses of forms.','easy','2','mrs. s.s.kadam'),
+ ('37','computer technology','fifth','css','unit-iii','explain in brief the properties and methods used in form.','easy','1','mrs. s.s.kadam'),
+ ('38','computer technology','fifth','css','unit-iii','how will you create password field in a html form ?','easy','2','mrs. s.s.kadam'),
+ ('39','computer technology','fifth','css','unit-iii','explain the use of button element with the help of example','easy','5','mrs. s.s.kadam'),
+ ('4','computer technology','fifth','css','unit-i','explain six type of values in javascript.','easy','2','mrs. s.s.kadam'),
+ ('40','computer technology','fifth','css','unit-iii','what is the difference between group of checkbox buttons and group of     radio buttons .','difficult','5','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('41','computer technology','fifth','css','unit-iii','design a simple html form for filling the information for registration of     a student.','difficult','2','mrs. s.s.kadam'),
+ ('42','computer technology','fifth','css','unit-iii','write a form to make login and password.','easy','2','mrs. s.s.kadam'),
+ ('43','computer technology','fifth','css','unit-iii','what is event handler. give an example of event handler in javascript.','medium','1','mrs. s.s.kadam'),
+ ('44','computer technology','fifth','css','unit-iii','explain various commonly used mouse events in javascript.','medium','1','mrs. s.s.kadam'),
+ ('45','computer technology','fifth','css','unit-iii','explain any two keyboard events in javascript.','medium','5','mrs. s.s.kadam'),
+ ('46','computer technology','fifth','css','unit-iii','explain how to change attribute values dynamically.','medium','4','mrs. s.s.kadam'),
+ ('47','computer technology','fifth','css','unit-iii','write a javascript to create three categories - fruit, flower and colour.','medium','4','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('48','computer technology','fifth','css','unit-iii','based on the selection of category, the item, in the option list must get changed.','medium','4','mrs. s.s.kadam'),
+ ('49','computer technology','fifth','css','unit-iii','what is intrinsic function?','medium','5','mrs. s.s.kadam'),
+ ('5','computer technology','fifth','css','unit-i','list the different types of operator in javascript. describe any one in details.','easy','4','mrs. s.s.kadam'),
+ ('50','computer technology','fifth','css','unit-iii','how to disable particular element on the form.','difficult','5','mrs. s.s.kadam'),
+ ('51','computer technology','fifth','css','unit-iii','what is the use of read-only element in javascript','medium','1','mrs. s.s.kadam'),
+ ('52','computer technology','fifth','css','unit-iv','what is cookies?','easy','2','mrs. s.s.kadam'),
+ ('53','computer technology','fifth','css','unit-iv','explain how to create cookies in javascript.','easy','2','mrs. s.s.kadam'),
+ ('54','computer technology','fifth','css','unit-iv','explain how to read cookies in javascript.','easy','5','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('55','computer technology','fifth','css','unit-iv','write a javascript to delete the cookie.','easy','1','mrs. s.s.kadam'),
+ ('56','computer technology','fifth','css','unit-iv','explain the functions getmonth( setmonth0, togmtstring())','difficult','2','mrs. s.s.kadam'),
+ ('57','computer technology','fifth','css','unit-iv','explain the syntax for opening a window.','medium','2','mrs. s.s.kadam'),
+ ('58','computer technology','fifth','css','unit-iv','explain the use offocus() method for window object.','medium','4','mrs. s.s.kadam'),
+ ('59','computer technology','fifth','css','unit-iv','write a javascript to change the contents of the newly created window.','medium','4','mrs. s.s.kadam'),
+ ('6','computer technology','fifth','css','unit-i','what is conditional operator in javascript?','easy','1','mrs. s.s.kadam'),
+ ('60','computer technology','fifth','css','unit-iv','write a javascript to open multiple windows at a time.','medium','1','mrs. s.s.kadam'),
+ ('61','computer technology','fifth','css','unit-iv','what is the use of settimeout () function? write a javascript to illustrate it.','difficult','1','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('62','computer technology','fifth','css','unit-iv','what is the use of setinterval0 function? write a javascript to illustrate it.','medium','4','mrs. s.s.kadam'),
+ ('63','computer technology','fifth','css','unit-iv','write a javascript to display the pathname of the web page  usingwindow.location object.','difficult','5','mrs. s.s.kadam'),
+ ('64','computer technology','fifth','css','unit-v','define the term - regular expression.','easy','2','mrs. s.s.kadam'),
+ ('65','computer technology','fifth','css','unit-v','construct regular expression for validating the phone number in','easy','1','mrs. s.s.kadam'),
+ ('66','computer technology','fifth','css','unit-v','following format only : (nnn)-nnnn-nnnn or nnn.nnnn.nnnn','medium','4','mrs. s.s.kadam'),
+ ('67','computer technology','fifth','css','unit-v','write a java program that checks whether the string entered by the user contains digits or not.','difficult','4','mrs. s.s.kadam'),
+ ('68','computer technology','fifth','css','unit-v','explain any four commonly used methods in regular expression.','easy','2','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('69','computer technology','fifth','css','unit-v','write a javascript program to create rollover effect for three images.','easy','5','mrs. s.s.kadam'),
+ ('7','computer technology','fifth','css','unit-i','list the different types of popup box. explain any of it with example.','medium','4','mrs. s.s.kadam'),
+ ('70','computer technology','fifth','css','unit-v','how will you specify the range of characters using a regular expression?','difficult','5','mrs. s.s.kadam'),
+ ('71','computer technology','fifth','css','unit-v','give the regular expression for matching digits and non-digits.','medium','2','mrs. s.s.kadam'),
+ ('72','computer technology','fifth','css','unit-v','explain any four regular expression object properties','easy','1','mrs. s.s.kadam'),
+ ('73','computer technology','fifth','css','unit-v','what is frame?','medium','2','mrs. s.s.kadam'),
+ ('74','computer technology','fifth','css','unit-v','explain frameset tag along with the attributes used in it.','easy','1','mrs. s.s.kadam'),
+ ('75','computer technology','fifth','css','unit-v','write a javascript to display frames without border.','medium','2','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('76','computer technology','fifth','css','unit-v','write a javascript to change the contents of one frame from another frame.','easy','4','mrs. s.s.kadam'),
+ ('77','computer technology','fifth','css','unit-v','write javascript to change the label of button element present in frame2 from frame.','difficult','2','mrs. s.s.kadam'),
+ ('78','computer technology','fifth','css','unit-v','what is rollover?','medium','1','mrs. s.s.kadam'),
+ ('79','computer technology','fifth','css','unit-v','what are the methods used most commonly during the rollover?','medium','5','mrs. s.s.kadam'),
+ ('8','computer technology','fifth','css','unit-i','write a javascript to display squares of 1 to 10 numbers using while loop.','medium','1','mrs. s.s.kadam'),
+ ('80','computer technology','fifth','css','unit-v','write a javascript in which when user rolls over the name of fruit, the corresponding image should be displayed. for instance - if user rolls over the text \"mango\"; the image of mango should be displayed.','difficult','4','mrs. s.s.kadam'),
+ ('81','computer technology','fifth','css','unit-v','write a javascript in which when user rolls over the name of fruit, the corresponding image should be displayed. along with the appropriate image display, additional window should pop up displaying the benefit of each fruit.','difficult','5','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('82','computer technology','fifth','css','unit-vi','what is the use of status bar in a web application?','easy','2','mrs. s.s.kadam'),
+ ('83','computer technology','fifth','css','unit-vi','state the method to put message in web browser status bar?','easy','2','mrs. s.s.kadam'),
+ ('84','computer technology','fifth','css','unit-vi','write a javascript program that create a scrolling text on the status line of a window.','easy','1','mrs. s.s.kadam'),
+ ('85','computer technology','fifth','css','unit-vi','write a program to display a javascript status bar message whenever your users hover over your hyperlinks.','easy','4','mrs. s.s.kadam'),
+ ('86','computer technology','fifth','css','unit-vi','write a javascript to scroll the status bar message horizontally','easy','2','mrs. s.s.kadam'),
+ ('87','computer technology','fifth','css','unit-vi','what is banner ad?','medium','4','mrs. s.s.kadam'),
+ ('88','computer technology','fifth','css','unit-vi','develop a javascript program to create rotating banner ads with url links.','medium','5','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('89','computer technology','fifth','css','unit-vi','write a javascript to create and display banner','medium','1','mrs. s.s.kadam'),
+ ('9','computer technology','fifth','css','unit-i','write a javascript program that accept two integers and display the larger.','easy','2','mrs. s.s.kadam'),
+ ('90','computer technology','fifth','css','unit-vi','write a javascript that illustrates linking of banner advertisement to url','difficult','5','mrs. s.s.kadam'),
+ ('91','computer technology','fifth','css','unit-vi','what is slide show?','medium','4','mrs. s.s.kadam'),
+ ('92','computer technology','fifth','css','unit-vi','write a javascript to show the creation of slide show,','medium','5','mrs. s.s.kadam'),
+ ('93','computer technology','fifth','css','unit-vi','explain with suitable example how to create a pull down menu.','medium','1','mrs. s.s.kadam'),
+ ('94','computer technology','fifth','css','unit-vi','what is dynamic menu?','medium','1','mrs. s.s.kadam'),
+ ('95','computer technology','fifth','css','unit-vi','how to create dynamically changing menu in javascript.','medium','4','mrs. s.s.kadam');
+INSERT INTO `questions` (`sr_no`,`department`,`semester`,`subject`,`unit`,`question`,`level_of_que`,`marks`,`teacher_name`) VALUES 
+ ('96','computer technology','fifth','css','unit-vi','what is float menu?','easy','4','mrs. s.s.kadam'),
+ ('97','computer technology','fifth','css','unit-vi','explain chain select menu with necessary illustration.','difficult','5','mrs. s.s.kadam'),
+ ('98','computer technology','fifth','css','unit-vi','what is tab menu? explain it with diagrammatic representation.','difficult','4','mrs. s.s.kadam'),
+ ('99','computer technology','fifth','css','unit-vi','explain folding tree menu.','easy','2','mrs. s.s.kadam');
+/*!40000 ALTER TABLE `questions` ENABLE KEYS */;
+
+
+--
+-- Table structure for table `automaticquestionpapergenerator`.`registration_info`
+--
+
+DROP TABLE IF EXISTS `registration_info`;
+CREATE TABLE `registration_info` (
+  `name` varchar(45) NOT NULL default '',
+  `email_id` varchar(45) NOT NULL default '',
+  `mobile_number` varchar(45) NOT NULL default '',
+  `register_as` varchar(45) NOT NULL default '',
+  `user_name` varchar(45) NOT NULL default '',
+  `password` varchar(45) NOT NULL default ''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `automaticquestionpapergenerator`.`registration_info`
+--
+
+/*!40000 ALTER TABLE `registration_info` DISABLE KEYS */;
+INSERT INTO `registration_info` (`name`,`email_id`,`mobile_number`,`register_as`,`user_name`,`password`) VALUES 
+ ('vishakha','vish121@gmail.com','8956417852','Admin','vish','123'),
+ ('Tushar','tushar11@gmail.com','8965412567','Staff','tush','123'),
+ ('mrs. s.s.kadam','kadam12@gmail.com','8956745634','Staff','skadam','123');
+/*!40000 ALTER TABLE `registration_info` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
